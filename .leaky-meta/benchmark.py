@@ -95,7 +95,7 @@ def build_md_table(secrets_function):
     print_template = '{}{}| {}/{} | {}\n'
 
     expected_counts = [x for x in get_secret_counts()]
-    # Get the max length of a filename, so we can put a column seperator after it
+    # Get the max length of a filename, so we can put a column separator after it
     sep_col = max([len(val[0]) for val in expected_counts]) + 2
     out = build_table_header(sep_col)
     total_files = len(expected_counts)
